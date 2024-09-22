@@ -41,6 +41,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-stocks84-drfoldfashion-vcmqom4sh52.ws.codeinstitute-ide.net']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-stocks84-drfoldfashion-vcmqom4sh52.ws.codeinstitute-ide.net',
+    'http://localhost:3000',  # Add this if you're running React on localhost
+]
+
+
 
 # Application definition
 
@@ -53,6 +59,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'profiles',
 ]
 
 MIDDLEWARE = [
